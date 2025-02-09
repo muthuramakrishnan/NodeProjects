@@ -16,6 +16,7 @@ function Employee(firstName, lastName, phone) {
     this.phone = phone;
 }
 
+//static methods
 Employee.createEmployee = function (employeeType = "Manager", firstName, lastName, phone, yoe, avgStockPrice) {
     if (employeeType === "Manager") {
         const Manager = require("./Manager"); // Lazy load Manager

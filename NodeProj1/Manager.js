@@ -14,6 +14,7 @@ function Manager(firstName, lastName, phone, yoe, avgStockPrice) {
     this.avgStockPrice = avgStockPrice;
 }
 
+//Inherits Employee
 Manager.prototype = Object.create(Employee.prototype);
 Manager.prototype.constructor = Manager;
 
